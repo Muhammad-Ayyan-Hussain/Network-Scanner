@@ -1,0 +1,244 @@
+{
+    "tool": "NetShield",
+    "target": "192.168.10.19",
+    "scan_type": "os",
+    "ports": "Default Nmap ports",
+    "date": "2026-05-26 04:45:11",
+    "results": [
+        {
+            "ip": "192.168.10.19",
+            "os": "Linux 2.6.9 - 2.6.33",
+            "ports": [
+                {
+                    "port": 21,
+                    "protocol": "tcp",
+                    "service": "ftp",
+                    "state": "open",
+                    "version": "Unknown"
+                },
+                {
+                    "port": 22,
+                    "protocol": "tcp",
+                    "service": "ssh",
+                    "state": "open",
+                    "version": "Unknown"
+                },
+                {
+                    "port": 23,
+                    "protocol": "tcp",
+                    "service": "telnet",
+                    "state": "open",
+                    "version": "Unknown"
+                },
+                {
+                    "port": 25,
+                    "protocol": "tcp",
+                    "service": "smtp",
+                    "state": "open",
+                    "version": "Unknown"
+                },
+                {
+                    "port": 53,
+                    "protocol": "tcp",
+                    "service": "domain",
+                    "state": "open",
+                    "version": "Unknown"
+                },
+                {
+                    "port": 80,
+                    "protocol": "tcp",
+                    "service": "http",
+                    "state": "open",
+                    "version": "Unknown"
+                },
+                {
+                    "port": 111,
+                    "protocol": "tcp",
+                    "service": "rpcbind",
+                    "state": "open",
+                    "version": "Unknown"
+                },
+                {
+                    "port": 139,
+                    "protocol": "tcp",
+                    "service": "netbios-ssn",
+                    "state": "open",
+                    "version": "Unknown"
+                },
+                {
+                    "port": 445,
+                    "protocol": "tcp",
+                    "service": "microsoft-ds",
+                    "state": "open",
+                    "version": "Unknown"
+                },
+                {
+                    "port": 512,
+                    "protocol": "tcp",
+                    "service": "exec",
+                    "state": "open",
+                    "version": "Unknown"
+                },
+                {
+                    "port": 513,
+                    "protocol": "tcp",
+                    "service": "login",
+                    "state": "open",
+                    "version": "Unknown"
+                },
+                {
+                    "port": 514,
+                    "protocol": "tcp",
+                    "service": "shell",
+                    "state": "open",
+                    "version": "Unknown"
+                },
+                {
+                    "port": 1099,
+                    "protocol": "tcp",
+                    "service": "rmiregistry",
+                    "state": "open",
+                    "version": "Unknown"
+                },
+                {
+                    "port": 1524,
+                    "protocol": "tcp",
+                    "service": "ingreslock",
+                    "state": "open",
+                    "version": "Unknown"
+                },
+                {
+                    "port": 2049,
+                    "protocol": "tcp",
+                    "service": "nfs",
+                    "state": "open",
+                    "version": "Unknown"
+                },
+                {
+                    "port": 2121,
+                    "protocol": "tcp",
+                    "service": "ccproxy-ftp",
+                    "state": "open",
+                    "version": "Unknown"
+                },
+                {
+                    "port": 3306,
+                    "protocol": "tcp",
+                    "service": "mysql",
+                    "state": "open",
+                    "version": "Unknown"
+                },
+                {
+                    "port": 5432,
+                    "protocol": "tcp",
+                    "service": "postgresql",
+                    "state": "open",
+                    "version": "Unknown"
+                },
+                {
+                    "port": 5900,
+                    "protocol": "tcp",
+                    "service": "vnc",
+                    "state": "open",
+                    "version": "Unknown"
+                },
+                {
+                    "port": 6000,
+                    "protocol": "tcp",
+                    "service": "X11",
+                    "state": "open",
+                    "version": "Unknown"
+                },
+                {
+                    "port": 6667,
+                    "protocol": "tcp",
+                    "service": "irc",
+                    "state": "open",
+                    "version": "Unknown"
+                },
+                {
+                    "port": 8009,
+                    "protocol": "tcp",
+                    "service": "ajp13",
+                    "state": "open",
+                    "version": "Unknown"
+                },
+                {
+                    "port": 8180,
+                    "protocol": "tcp",
+                    "service": "",
+                    "state": "open",
+                    "version": "Unknown"
+                }
+            ],
+            "vulnerabilities": [
+                {
+                    "port": 21,
+                    "name": "FTP Service Open",
+                    "severity": "High",
+                    "recommendation": "Disable FTP or use SFTP"
+                },
+                {
+                    "port": 23,
+                    "name": "Telnet Service Open",
+                    "severity": "Critical",
+                    "recommendation": "Disable Telnet and use SSH"
+                },
+                {
+                    "port": 25,
+                    "name": "SMTP Service Open",
+                    "severity": "Medium",
+                    "recommendation": "Restrict mail relay and verify SMTP security"
+                },
+                {
+                    "port": 53,
+                    "name": "DNS Service Open",
+                    "severity": "Medium",
+                    "recommendation": "Restrict DNS zone transfers"
+                },
+                {
+                    "port": 80,
+                    "name": "HTTP Service",
+                    "severity": "Medium",
+                    "recommendation": "Use HTTPS and secure web headers"
+                },
+                {
+                    "port": 139,
+                    "name": "NetBIOS Service Open",
+                    "severity": "Medium",
+                    "recommendation": "Restrict NetBIOS access"
+                },
+                {
+                    "port": 445,
+                    "name": "SMB Service Open",
+                    "severity": "High",
+                    "recommendation": "Secure SMB and restrict firewall access"
+                },
+                {
+                    "port": 2049,
+                    "name": "NFS Service Open",
+                    "severity": "High",
+                    "recommendation": "Restrict NFS access and check exports"
+                },
+                {
+                    "port": 3306,
+                    "name": "MySQL Database Exposed",
+                    "severity": "High",
+                    "recommendation": "Restrict MySQL access to trusted hosts"
+                },
+                {
+                    "port": 5432,
+                    "name": "PostgreSQL Database Exposed",
+                    "severity": "High",
+                    "recommendation": "Restrict PostgreSQL access"
+                },
+                {
+                    "port": 5900,
+                    "name": "VNC Service Open",
+                    "severity": "High",
+                    "recommendation": "Disable VNC or restrict with VPN"
+                }
+            ]
+        }
+    ]
+}

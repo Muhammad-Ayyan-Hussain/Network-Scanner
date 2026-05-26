@@ -1,0 +1,14 @@
+{
+    "tool": "NetShield",
+    "target": "127.0.0.1",
+    "scan_type": "normal",
+    "ports": "Default Nmap ports",
+    "date": "2026-05-26 04:31:06",
+    "results": [
+        {
+            "ip": "127.0.0.1",
+            "ports": [],
+            "vulnerabilities": []
+        }
+    ]
+}

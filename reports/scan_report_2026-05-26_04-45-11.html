@@ -1,0 +1,385 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NetShield Scan Report</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            padding: 20px;
+            color: #222;
+        }
+
+        h1 {
+            color: #111;
+        }
+
+        h2, h3 {
+            color: #222;
+        }
+
+        .summary {
+            background: white;
+            padding: 15px;
+            border-left: 5px solid #222;
+            margin-bottom: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 25px;
+            background: white;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #222;
+            color: white;
+        }
+
+        .Critical {
+            color: red;
+            font-weight: bold;
+        }
+
+        .High {
+            color: darkred;
+            font-weight: bold;
+        }
+
+        .Medium {
+            color: orange;
+            font-weight: bold;
+        }
+
+        .Low {
+            color: green;
+            font-weight: bold;
+        }
+
+        .None {
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>NetShield Vulnerability Report</h1>
+
+    <div class="summary">
+        <p><strong>Target:</strong> 192.168.10.19</p>
+        <p><strong>Date:</strong> 2026-05-26 04:45:11</p>
+        <p><strong>Scan Type:</strong> os</p>
+        <p><strong>Custom Ports:</strong> Default Nmap ports</p>
+        <p><strong>Total Hosts Found:</strong> 1</p>
+    </div>
+
+    
+
+        <h2>Host: 192.168.10.19</h2>
+
+        <h3>Open Ports</h3>
+
+        <table>
+            <tr>
+                <th>Port</th>
+                <th>Protocol</th>
+                <th>Service</th>
+                <th>State</th>
+                <th>Version</th>
+            </tr>
+
+            
+            <tr>
+                <td>21</td>
+                <td>tcp</td>
+                <td>ftp</td>
+                <td>open</td>
+                <td>Unknown</td>
+            </tr>
+            
+            <tr>
+                <td>22</td>
+                <td>tcp</td>
+                <td>ssh</td>
+                <td>open</td>
+                <td>Unknown</td>
+            </tr>
+            
+            <tr>
+                <td>23</td>
+                <td>tcp</td>
+                <td>telnet</td>
+                <td>open</td>
+                <td>Unknown</td>
+            </tr>
+            
+            <tr>
+                <td>25</td>
+                <td>tcp</td>
+                <td>smtp</td>
+                <td>open</td>
+                <td>Unknown</td>
+            </tr>
+            
+            <tr>
+                <td>53</td>
+                <td>tcp</td>
+                <td>domain</td>
+                <td>open</td>
+                <td>Unknown</td>
+            </tr>
+            
+            <tr>
+                <td>80</td>
+                <td>tcp</td>
+                <td>http</td>
+                <td>open</td>
+                <td>Unknown</td>
+            </tr>
+            
+            <tr>
+                <td>111</td>
+                <td>tcp</td>
+                <td>rpcbind</td>
+                <td>open</td>
+                <td>Unknown</td>
+            </tr>
+            
+            <tr>
+                <td>139</td>
+                <td>tcp</td>
+                <td>netbios-ssn</td>
+                <td>open</td>
+                <td>Unknown</td>
+            </tr>
+            
+            <tr>
+                <td>445</td>
+                <td>tcp</td>
+                <td>microsoft-ds</td>
+                <td>open</td>
+                <td>Unknown</td>
+            </tr>
+            
+            <tr>
+                <td>512</td>
+                <td>tcp</td>
+                <td>exec</td>
+                <td>open</td>
+                <td>Unknown</td>
+            </tr>
+            
+            <tr>
+                <td>513</td>
+                <td>tcp</td>
+                <td>login</td>
+                <td>open</td>
+                <td>Unknown</td>
+            </tr>
+            
+            <tr>
+                <td>514</td>
+                <td>tcp</td>
+                <td>shell</td>
+                <td>open</td>
+                <td>Unknown</td>
+            </tr>
+            
+            <tr>
+                <td>1099</td>
+                <td>tcp</td>
+                <td>rmiregistry</td>
+                <td>open</td>
+                <td>Unknown</td>
+            </tr>
+            
+            <tr>
+                <td>1524</td>
+                <td>tcp</td>
+                <td>ingreslock</td>
+                <td>open</td>
+                <td>Unknown</td>
+            </tr>
+            
+            <tr>
+                <td>2049</td>
+                <td>tcp</td>
+                <td>nfs</td>
+                <td>open</td>
+                <td>Unknown</td>
+            </tr>
+            
+            <tr>
+                <td>2121</td>
+                <td>tcp</td>
+                <td>ccproxy-ftp</td>
+                <td>open</td>
+                <td>Unknown</td>
+            </tr>
+            
+            <tr>
+                <td>3306</td>
+                <td>tcp</td>
+                <td>mysql</td>
+                <td>open</td>
+                <td>Unknown</td>
+            </tr>
+            
+            <tr>
+                <td>5432</td>
+                <td>tcp</td>
+                <td>postgresql</td>
+                <td>open</td>
+                <td>Unknown</td>
+            </tr>
+            
+            <tr>
+                <td>5900</td>
+                <td>tcp</td>
+                <td>vnc</td>
+                <td>open</td>
+                <td>Unknown</td>
+            </tr>
+            
+            <tr>
+                <td>6000</td>
+                <td>tcp</td>
+                <td>X11</td>
+                <td>open</td>
+                <td>Unknown</td>
+            </tr>
+            
+            <tr>
+                <td>6667</td>
+                <td>tcp</td>
+                <td>irc</td>
+                <td>open</td>
+                <td>Unknown</td>
+            </tr>
+            
+            <tr>
+                <td>8009</td>
+                <td>tcp</td>
+                <td>ajp13</td>
+                <td>open</td>
+                <td>Unknown</td>
+            </tr>
+            
+            <tr>
+                <td>8180</td>
+                <td>tcp</td>
+                <td></td>
+                <td>open</td>
+                <td>Unknown</td>
+            </tr>
+            
+        </table>
+
+        <h3>Vulnerability Findings</h3>
+
+        
+
+        <table>
+            <tr>
+                <th>Port</th>
+                <th>Issue</th>
+                <th>Severity</th>
+                <th>Recommendation</th>
+            </tr>
+
+            
+            <tr>
+                <td>21</td>
+                <td>FTP Service Open</td>
+                <td class="High">High</td>
+                <td>Disable FTP or use SFTP</td>
+            </tr>
+            
+            <tr>
+                <td>23</td>
+                <td>Telnet Service Open</td>
+                <td class="Critical">Critical</td>
+                <td>Disable Telnet and use SSH</td>
+            </tr>
+            
+            <tr>
+                <td>25</td>
+                <td>SMTP Service Open</td>
+                <td class="Medium">Medium</td>
+                <td>Restrict mail relay and verify SMTP security</td>
+            </tr>
+            
+            <tr>
+                <td>53</td>
+                <td>DNS Service Open</td>
+                <td class="Medium">Medium</td>
+                <td>Restrict DNS zone transfers</td>
+            </tr>
+            
+            <tr>
+                <td>80</td>
+                <td>HTTP Service</td>
+                <td class="Medium">Medium</td>
+                <td>Use HTTPS and secure web headers</td>
+            </tr>
+            
+            <tr>
+                <td>139</td>
+                <td>NetBIOS Service Open</td>
+                <td class="Medium">Medium</td>
+                <td>Restrict NetBIOS access</td>
+            </tr>
+            
+            <tr>
+                <td>445</td>
+                <td>SMB Service Open</td>
+                <td class="High">High</td>
+                <td>Secure SMB and restrict firewall access</td>
+            </tr>
+            
+            <tr>
+                <td>2049</td>
+                <td>NFS Service Open</td>
+                <td class="High">High</td>
+                <td>Restrict NFS access and check exports</td>
+            </tr>
+            
+            <tr>
+                <td>3306</td>
+                <td>MySQL Database Exposed</td>
+                <td class="High">High</td>
+                <td>Restrict MySQL access to trusted hosts</td>
+            </tr>
+            
+            <tr>
+                <td>5432</td>
+                <td>PostgreSQL Database Exposed</td>
+                <td class="High">High</td>
+                <td>Restrict PostgreSQL access</td>
+            </tr>
+            
+            <tr>
+                <td>5900</td>
+                <td>VNC Service Open</td>
+                <td class="High">High</td>
+                <td>Disable VNC or restrict with VPN</td>
+            </tr>
+            
+        </table>
+
+        
+
+    
+
+</body>
+</html>
