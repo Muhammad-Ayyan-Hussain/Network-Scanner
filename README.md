@@ -42,7 +42,7 @@ NetShield/
 ├── requirements.txt
 ├── README.md
 └── Screenshots
-
+```
 # Environment Setup and Dependency Installation
 
 ## Steps — Update System Packages
@@ -55,7 +55,6 @@ For Kali Linux / Ubuntu / Debian:
 2) sudo apt install python3 python3-pip python3-venv nmap -y
 
 3) sudo apt install sqlite3 libsqlite3-dev sqlitebrowser -y
-
 
 4) python3 -m venv venv
 
