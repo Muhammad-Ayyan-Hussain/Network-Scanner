@@ -1,8 +1,6 @@
 # NetShield
 
-NetShield is an advanced Linux-based Network Scanner and Vulnerability Reporting Tool built with Python and Nmap.
-
-It is designed for Information Assurance, cybersecurity learning, and authorized network auditing.
+NetShield is an open-source network scanning and vulnerability reporting tool designed for cybersecurity learning, Information security projects, and authorized network assessments.
 
 ## Features
 
@@ -36,34 +34,92 @@ NetShield/
 │   ├── database.py
 │   └── report.py
 │
-├── reports/
 ├── main.py
 ├── history.py
 ├── requirements.txt
 ├── README.md
-└── Screenshots
+├── Screenshots/
+├── reports/             (created automatically)
+└── netshield.db         (created automatically after first scan)
 ```
-# Environment Setup and Dependency Installation
 
-## Steps
+## Requirements
 
-For Kali Linux / Ubuntu / Debian:
+- Python 3.8+
+- Nmap
+- SQLite3
+- python-nmap
+- rich
+- jinja2
+
+## Download Project
+
+Clone the repository:
 
 ```bash
-1) sudo apt update
-
-2) sudo apt install python3 python3-pip python3-venv nmap -y
-
-3) sudo apt install sqlite3 libsqlite3-dev sqlitebrowser -y
-
-4) python3 -m venv venv
-
-5) source venv/bin/activate
-
-6) pip install -r requirements.txt
-
-Now your network-scanner is ready to go.
+git clone https://github.com/Muhammad-Ayyan-Hussain/Network-Scanner.git
+cd Network-Scanner
 ```
+
+## Environment Setup and Dependency Installation
+
+
+### Step 1: Update Package Lists
+
+```bash
+sudo apt update
+```
+
+### Step 2: Install Required Packages
+
+```bash
+sudo apt install python3 python3-pip python3-venv nmap -y
+sudo apt install sqlite3 libsqlite3-dev sqlitebrowser -y
+```
+
+### Step 3: Create Virtual Environment
+
+```bash
+python3 -m venv venv
+```
+
+### Step 4: Activate Virtual Environment
+
+```bash
+source venv/bin/activate
+```
+
+### Step 5: Install Python Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+The `requirements.txt` file contains:
+
+```text
+python-nmap
+rich
+jinja2
+```
+
+You are now ready to use NetShield.
+
+## First Run
+
+Run a basic scan to verify the installation:
+
+```bash
+python3 main.py --target 127.0.0.1
+
+```
+
+This will automatically:
+
+- Create netshield.db
+- Create the required database tables
+- Verify that Nmap is working correctly
+
 
 ## Usage
 
@@ -256,7 +312,6 @@ Generated reports are stored automatically inside:
 ```text
 reports/
 ```
-
 Supported report formats:
 
 * HTML
@@ -264,6 +319,24 @@ Supported report formats:
 * CSV
 
 ---
+
+## Example
+
+Generate all reports:
+
+```bash
+python3 main.py --target 192.168.1.1 --scan-type quick --output all
+```
+
+Generated files:
+
+```text
+reports/
+├── scan_report_xxx.html
+├── scan_report_xxx.json
+└── scan_report_xxx.csv
+```
+
 
 ## Screenshots
 
@@ -273,6 +346,6 @@ Screenshots demonstrating the tool can be found in the `Screenshots/` directory.
 
 ## Security Notice
 
-This tool is intended for educational purposes and authorized security assessments only.
+NetShield is intended for educational purposes, cybersecurity learning, and authorized security assessments only.
 
-Only scan systems and networks that you own or have explicit permission to test.
+Users are responsible for obtaining proper authorization before scanning any network, host, or system. Unauthorized scanning may violate laws, regulations, or organizational policies.
